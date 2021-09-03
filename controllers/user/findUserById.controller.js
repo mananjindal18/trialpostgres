@@ -1,4 +1,4 @@
-const pool = require('../../db/pool');
+const pool = require('../../config/pool');
 module.exports.findUserById = async (req, res,next) => {
   const username = req.params.id;
   const response = await pool.query(
