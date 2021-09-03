@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 //     //console.log(process.env.PORT)
 //     //res.send("Hello mister new");
 // });
-app.use('/user', userRouter);
+app.use('/', require('./routes'));
 // app.use('/event', eventRouter);
 // app.use('/item', itemRouter);
 // app.use('/quiz', quizRouter);
