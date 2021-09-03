@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const {createUser,listAllUsers,findUserById,updateUserById} = require('../controllers/user');
+const {createUser,listAllUsers,findUserById,updateUserById,listAllUsersPagination} = require('../controllers/user');
 
 // router.get('/',(req,res)=>{
 //     console.log("in user");
@@ -11,5 +11,5 @@ router.post('/createUser',createUser);
 router.get('/listAllUsers', listAllUsers);
 router.get('/findUserById/:id', findUserById);
 router.put('/updateUserById/:id',updateUserById);
-
+router.get('/listAllUsersPagination/page=:page&limit=:limit',listAllUsersPagination);
 module.exports = router;
