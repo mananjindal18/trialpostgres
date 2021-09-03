@@ -27,7 +27,7 @@ app.use(cors())
 //   //console.log(`${req.priginalUrl}`)
 //   next()
 // }
-app.use(customlogger({"req":"logg"}));
+//app.use(customlogger({"req":"logg"}));
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'ejs');
